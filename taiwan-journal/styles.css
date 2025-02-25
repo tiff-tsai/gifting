@@ -1,0 +1,123 @@
+/* Index Page Background Image */
+.home-page {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+/* ====== About Page ====== */
+/* Style only the About page */
+    /* Container for both image and text */
+    .about-container {
+        display: flex;
+        justify-content: space-between; /* Places image and text at opposite sides */
+        align-items: center; /* Vertically aligns the items */
+        padding: 20px;
+        gap: 20px; /* Adds space between image and text */
+    }
+
+    /* Style for the image */
+    .about-image img {
+        width: 100%; /* Ensures the image takes the full width of its container */
+        max-width: 400px; /*limits the image width */
+        height: auto; /* Keeps the aspect ratio intact */
+        border-radius: 10px; /* Optional: adds rounded corners */
+    }
+
+    /* Style for the text */
+    .about-text {
+        width: 60%; /* Optional: makes the text section narrower than the image */
+        font-family: Arial, sans-serif; /* Optional: set a font for the text */
+    }
+
+    /* Optional: Add some styling for the heading */
+    .about-text h1 {
+        font-size: 2em;
+        color: #333;
+    }
+
+    /* Optional: Add padding for the text */
+    .about-text p {
+        font-size: 1.2em;
+        color: #666;
+        line-height: 1.6;
+    }
+
+/* ====== Basic Styling ====== */
+body {
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif; /* Font style */
+    color: #504949; /* Default text color */
+    margin: 50;
+    padding: 5;
+    cursor: url('taiwan_cursor.png'), auto; 
+    align-items: center;
+    }
+
+/* ====== Text Styling ====== */
+h1 {
+    font-family: 'Karla', sans-serif;
+    color: rgb(89, 122, 228); /* Text color */
+    text-align: center; /* Center the text */
+    text-transform: uppercase; /* Make text uppercase */
+    text-shadow: 2px 2px 5px gray; /* Add shadow effect */
+}
+
+
+p {
+    font-size: 16px; /* Text size */
+    line-height: 1.5; /* Space between lines */
+    font-weight: bold; /* Make text bold */
+    font-style: italic; /* Italic text */
+}
+
+/* ====== Links ====== */
+a {
+    text-decoration: none; /* Remove underline */
+    color: blue;
+}
+
+a:hover {
+    color: rgb(187, 176, 176); /* Change color when hovering */
+}
+
+ 
+
+
+/* ====== Navigation ====== */
+    /* Style the navbar */
+    nav {
+        background-color: rgba(166, 165, 167, 0.699); /* Dark background */
+        padding: 15px 0;
+        position: fixed;  /* Keeps it at the top when scrolling */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;  /* Ensures it's on top of other content */
+    }
+
+    /* Style the list */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;  /* Centers the items */
+    }
+
+    /* Style each list item */
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    /* Style the links */
+    nav ul li a {
+        color: rgb(52, 53, 57);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px 15px;
+        transition: background 0.3s;
+    }
+
+    /* Add a hover effect */
+    nav ul li a:hover {
+        color: rgb(79, 102, 178); /* lighter color on hover */
+    }
