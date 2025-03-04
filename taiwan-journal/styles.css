@@ -1,100 +1,105 @@
 /* ====== Title.png ====== */
 .title-image {
-    display: block; 
+    display: block;
     margin: 20px auto;
-    max-width: 600px; 
-    height: auto; 
+    max-width: 600px;
+    height: auto;
 }
 
 /* ====== Basic Styling ====== */
 body {
     font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
-    color: #504949; 
+    color: #504949;
     margin: 50;
     padding: 5;
-    cursor: url('taiwan_cursor.png'), auto; 
+    cursor: url('taiwan_cursor.png'), auto;
     align-items: center;
-    }
+}
 
 p {
-    font-size: 16px; 
-    line-height: 1.2; 
+    font-size: 16px;
+    line-height: 1.2;
     font-style: italic;
 }
 
-h2{
-    font-size: 20px; 
-    line-height: 1.2; 
+h2 {
+    font-size: 20px;
+    line-height: 1.2;
     font-style: bold;
 
 }
 
 /* ====== Navigation Bar ====== */
-    /* Style the navbar */
-    nav {
-        background-color: rgba(183, 187, 199, 0.699); 
-        padding: 15px 0;
-        position: fixed;  /* Keeps it at the top when scrolling */
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;  /* Ensures it's on top of other content */
-    }
+/* Style the navbar */
+nav {
+    background-color: rgba(183, 187, 199, 0.699);
+    padding: 15px 0;
+    position: fixed;
+    /* Keeps it at the top when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensures it's on top of other content */
+}
 
-    /* Style the list */
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;  /* Centers the items */
-    }
+/* Style the list */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Centers the items */
+}
 
-    /* Style each list item */
-    nav ul li {
-        margin: 0 20px;
-    }
+/* Style each list item */
+nav ul li {
+    margin: 0 20px;
+}
 
-    /* Style the links */
-    nav ul li a {
-        color: rgb(66, 69, 82);
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 10px 15px;
-    }
+/* Style the links */
+nav ul li a {
+    color: rgb(66, 69, 82);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+}
 
-    /* Add a hover effect */
-    nav ul li a:hover {
-        color: rgb(166, 53, 53); 
-    }
+/* Add a hover effect */
+nav ul li a:hover {
+    color: rgb(166, 53, 53);
+}
 
 
-    /* ====== About Page ====== */
-.about-content{
-    display: flex; 
-    align-items: center; 
+/* ====== About Page ====== */
+.about-content {
+    display: flex;
+    align-items: center;
     gap: 30px;
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px;
 }
+
 .about-image img {
     max-width: 450px;
     border-radius: 80px;
 }
+
 /* Media query for smaller screens */
 @media (max-width: 1000px) {
     .about-content {
-      flex-direction: column;  
-      align-items: center;   
+        flex-direction: column;
+        align-items: center;
     }
-  
-    .about-image {
-      margin-right: 0;  /* Remove the right margin */
-      margin-bottom: 20px;  /* Add space below the image */
-    }
-  }
-    
 
+    .about-image {
+        margin-right: 0;
+        /* Remove the right margin */
+        margin-bottom: 20px;
+        /* Add space below the image */
+    }
+}
