@@ -68,29 +68,29 @@ p {
 }
 
 /* ====== Page Structure ====== */
+/* Key photo and city name */
 .city-header {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    margin-bottom: 50px;
 }
 
 .city-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -50px;
     left: 0;
 }
 
 .city-title {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5rem;
+    font-size: 100px;
     color: white;
     text-shadow: 3px  3px 0 black;
     animation: fade_in 2s forwards;
@@ -101,16 +101,20 @@ p {
     to { opacity: 1; }
 }
 
+/* photo gallery and captions */
 .gallery {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 5px;
     padding: 20px;
     width: 80%;
     max-width: 1000px;
-    box-sizing: border-box; /* Ensures padding is included in width calculations */
-    margin-top: 20px;
+    box-sizing: border-box; 
+    margin: 0 auto;  
+    justify-items: center;   
+    align-items: center;
 }
 
 .photo {
@@ -119,7 +123,7 @@ p {
 }
 
 .photo img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -127,9 +131,8 @@ p {
 .caption {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(46, 42, 42, 0.449);
     color: white;
     text-align: center;
     padding: 5px;
