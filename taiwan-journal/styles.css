@@ -1,9 +1,10 @@
-/* Index Page Background Image */
-.home-page {
-    background: url('background.jpeg') no-repeat center center/cover;
-    height: 100vh;
+/* ====== Title.png ====== */
+.title-image {
+    display: block; 
+    margin: 20px auto;
+    max-width: 600px; 
+    height: auto; 
 }
-
 
 /* ====== Basic Styling ====== */
 body {
@@ -15,21 +16,20 @@ body {
     align-items: center;
     }
 
-h1 {
-    font-family: 'Karla', sans-serif;
-    color: rgb(89, 122, 228); 
-    text-align: center; 
-    text-transform: uppercase; 
-    text-shadow: 2px 2px 5px gray; 
-}
-
 p {
     font-size: 16px; 
     line-height: 1.2; 
     font-style: italic;
 }
 
-/* ====== Navigation ====== */
+h2{
+    font-size: 20px; 
+    line-height: 1.2; 
+    font-style: bold;
+
+}
+
+/* ====== Navigation Bar ====== */
     /* Style the navbar */
     nav {
         background-color: rgba(183, 187, 199, 0.699); 
@@ -69,3 +69,20 @@ p {
     nav ul li a:hover {
         color: rgb(166, 53, 53); 
     }
+
+
+    /* ====== About Page ====== */
+.about-content{
+    display: flex; 
+    align-items: center; 
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+.about-image img {
+    max-width: 450px;
+    border-radius: 80px;
+}
+    
+
