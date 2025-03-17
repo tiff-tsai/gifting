@@ -72,34 +72,3 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(166, 53, 53);
 }
-
-
-/* ====== About Page ====== */
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.about-image img {
-    max-width: 450px;
-    border-radius: 80px;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 1000px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-image {
-        margin-right: 0;
-        /* Remove the right margin */
-        margin-bottom: 20px;
-        /* Add space below the image */
-    }
-}

@@ -2,110 +2,131 @@
 <html>
 
 <head>
-  <title> 🇹🇼 Taiwan Journal 🇹🇼</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Internal CSS goes here */
-    .home-page {
-      background: url('background.jpeg') no-repeat center center/cover;
-      min-height: 100vh;
-      width: 100%;
-    }
-  </style>
+       <title> Taiwan Journal 🇹🇼</title>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, user-scalable=no" />
+       <link rel="stylesheet" href="styles.css">
+       <link rel="icon" type="image/png" href="favicon.png">
+       <style>
+              /* Internal CSS goes here */
+              .home-page {
+                     background: url('background.jpeg') no-repeat center center/cover;
+                     min-height: 100vh;
+                     width: 100%;
+              }
+
+              .map-container {
+                     position: relative;
+                     width: 600px;
+                     height: auto;
+                     margin: 0 auto;
+              }
+
+              .map-container img {
+                     display: block;
+                     width: 100%;
+                     height: 100%;
+              }
+              
+       </style>
+
 </head>
 
 <body class="home-page">
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-    </ul>
-  </nav>
-  <br><br>
-  <br><br>
+       <!-- Navigation Bar -->
+       <nav>
+              <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="about.html">ABOUT</a></li>
+              </ul>
+       </nav>
+       <br><br>
+       <br><br>
 
-  <!-- title font generated at https://www.font-generator.com/fonts/GreatDay/?size=96&color=000000&bg=none-->
-  <img src="title.png" class="title-image" alt="Title">
+       <!-- title font generated at https://www.font-generator.com/fonts/GreatDay/?size=96&color=000000&bg=none-->
+       <img src="title.png" class="title-image" alt="Title">
 
-  <!--  clickable map -->
-  <!-- coordinates generted with http://app.bhencke.com/pixelmap.html-->
-  <center> <img src="taiwan-map.png" alt="Map of Taiwan" usemap="#taiwanmap" width="600">
-  </center>
+       <!--  clickable map, coordinates generted with http://app.bhencke.com/pixelmap.html-->
+       <div class="map-container">
+              <img src="taiwan-map.png" alt="Map of Taiwan" class="map" usemap="#taiwanmap" width="600" />
+       </div>
 
-  <map name="taiwanmap">
 
-    <area shape="poly" coords="388,65, 416,64, 422,46, 461,28, 475,33, 479,48, 490,54, 485,64, 
+       <map name="taiwanmap" id="taiwanmap">
+
+              <area shape="poly" coords="388,65, 416,64, 422,46, 461,28, 475,33, 479,48, 490,54, 485,64, 
            479,69, 478,78, 489,89, 505,94, 504,78, 515,73, 533,78, 550,93, 
            560,98, 559,107, 508,122, 465,142, 459,160, 430,169, 420,149, 
-           418,134, 403,129, 399,116, 412,95, 411,77, 386,65" href="cities/taipei.html" alt="Taipei">
-    <area shape="poly" coords="515,71, 504,66, 490,57, 487,60, 485,64, 479,68, 478,74, 488,88, 
-           493,91, 504,94, 507,93, 506,84, 505,77, 515,76, 517,71" href="cities/keelung.html" alt="Keelung">
-    <area shape="poly" coords="382,67, 369,68, 358,75, 347,81, 336,90, 321,97, 335,103, 350,111, 
+           418,134, 403,129, 399,116, 412,95, 411,77, 386,65" href="cities/taipei.html" alt="Taipei"
+                     data-city="taipei">
+              <area shape="poly" coords="515,71, 504,66, 490,57, 487,60, 485,64, 479,68, 478,74, 488,88, 
+           493,91, 504,94, 507,93, 506,84, 505,77, 515,76, 517,71" href="cities/keelung.html" alt="Keelung"
+                     data-city="keelung">
+              <area shape="poly" coords="382,67, 369,68, 358,75, 347,81, 336,90, 321,97, 335,103, 350,111, 
            357,118, 360,126, 373,135, 389,145, 391,151, 391,164, 392,173, 
            403,183, 413,187, 417,179, 428,169, 424,156, 419,142, 415,132, 
            401,128, 401,118, 396,111, 403,101, 413,95, 413,81, 409,74, 
-           396,69, 384,67" href="cities/taoyuan.html" alt="Taoyuan">
-    <area shape="poly" coords="320,99, 309,113, 297,124, 294,134, 291,146, 294,153, 306,158, 
+           396,69, 384,67" href="cities/taoyuan.html" alt="Taoyuan" data-city="taoyuan">
+              <area shape="poly" coords="320,99, 309,113, 297,124, 294,134, 291,146, 294,153, 306,158, 
            317,167, 330,181, 342,186, 358,190, 366,194, 376,211, 377,221, 
            390,221, 405,209, 413,201, 414,188, 397,177, 390,167, 391,154, 
-           390,146, 373,135, 362,130, 357,118, 345,108, 332,102, 319,99" href="cities/hsinchu.html" alt="Hsinchu">
-    <area shape="poly" coords="391,222, 400,213, 412,201, 414,187, 419,177, 428,169, 441,168, 
+           390,146, 373,135, 362,130, 357,118, 345,108, 332,102, 319,99" href="cities/hsinchu.html" alt="Hsinchu"
+                     data-city="hsinchu">
+              <area shape="poly" coords="391,222, 400,213, 412,201, 414,187, 419,177, 428,169, 441,168, 
            457,162, 459,153, 464,144, 488,137, 496,129, 501,122, 507,124, 
            525,115, 543,109, 549,111, 541,120, 531,135, 522,153, 521,169, 
            524,185, 536,195, 535,206, 532,221, 520,231, 513,238, 499,249, 
            495,250, 478,251, 473,246, 457,255, 445,249, 436,242, 419,232, 
-           406,233, 397,231, 391,222" href="cities/yilan.html" alt="Yilan">
-    <area shape="poly" coords="291,147, 296,153, 306,158, 316,168, 331,181, 349,186, 365,193, 
+           406,233, 397,231, 391,222" href="cities/yilan.html" alt="yilan" data-city="Yilan">
+              <area shape="poly" coords="291,147, 296,153, 306,158, 316,168, 331,181, 349,186, 365,193, 
            374,208, 377,215, 375,224, 367,234, 353,235, 344,242, 338,243, 
            329,248, 327,246, 321,252, 299,251, 291,245, 287,238, 276,236, 
            263,239, 251,237, 239,232, 224,218, 226,210, 243,195, 252,181, 
-           259,175, 270,175, 281,158, 291,147" href="cities/miaoli.html" alt="Miaoli">
-    <area shape="poly" coords="223,217, 214,226, 207,237, 198,252, 195,260, 198,277, 
+           259,175, 270,175, 281,158, 291,147" href="cities/miaoli.html" alt="Miaoli" data-city="miaoli">
+              <area shape="poly" coords="223,217, 214,226, 207,237, 198,252, 195,260, 198,277, 
            208,283, 214,289, 218,296, 222,304, 236,310, 250,313, 259,311, 
            271,292, 279,294, 287,292, 293,285, 301,287, 308,284, 323,284, 
            335,277, 349,271, 359,282, 372,287, 379,290, 386,294, 393,292, 
            399,293, 397,277, 396,261, 401,254, 419,241, 413,238, 400,238, 
            391,224, 383,224, 373,224, 367,234, 356,234, 344,242, 338,244, 
            329,249, 327,248, 321,252, 300,247, 293,244, 290,237, 276,235, 
-           263,237, 252,237, 239,232, 223,218" href="cities/taichung.html" alt="Taichung">
-    <area shape="poly" coords="195,263, 183,273, 177,281, 171,294, 160,307, 150,318, 
+           263,237, 252,237, 239,232, 223,218" href="cities/taichung.html" alt="Taichung" data-city="taichung">
+              <area shape="poly" coords="195,263, 183,273, 177,281, 171,294, 160,307, 150,318, 
             145,325, 140,334, 125,341, 132,344, 142,352, 154,348, 171,349, 
             193,356, 214,361, 224,363, 233,362, 227,355, 218,347, 218,318, 
-            222,304, 216,294, 204,281, 198,277, 195,261" href="cities/changhua.html" alt="Changhua">
-    <area shape="poly" coords="222,304, 216,315, 217,325, 216,345, 235,358, 225,364, 
+            222,304, 216,294, 204,281, 198,277, 195,261" href="cities/changhua.html" alt="Changhua"
+                     data-city="changhua">
+              <area shape="poly" coords="222,304, 216,315, 217,325, 216,345, 235,358, 225,364, 
             220,396, 235,398, 245,405, 259,409, 271,434, 285,437, 307,439, 
             326,432, 342,426, 349,414, 362,410, 366,395, 362,376, 359,368, 
             379,344, 373,325, 384,310, 391,294, 384,294, 369,284, 351,272, 
             333,277, 324,284, 309,284, 302,289, 290,286, 284,294, 273,291, 
-            258,313, 242,313, 224,308" href="cities/nantou.html" alt="Nantou">
-    <area shape="poly" coords="421,239, 405,254, 396,260, 403,291, 388,294, 387,304, 
+            258,313, 242,313, 224,308" href="cities/nantou.html" alt="Nantou" data-city="nantou">
+              <area shape="poly" coords="421,239, 405,254, 396,260, 403,291, 388,294, 387,304, 
             379,312, 373,324, 377,339, 376,348, 362,367, 364,375, 365,402, 
             361,409, 342,425, 325,430, 307,443, 315,451, 305,459, 312,471, 
             317,478, 324,482, 344,501, 354,498, 365,510, 374,513, 391,499, 
             399,483, 404,467, 403,449, 419,447, 431,451, 436,449, 434,439, 
             441,427, 453,367, 469,341, 469,315, 478,293, 476,284, 499,271, 
-            499,254, 488,252, 480,255, 470,250, 455,255, 440,247, 421,239" href="cities/hualien.html" alt="Hualien">
-    <area shape="poly" coords="124,349, 115,363, 107,370, 99,392, 93,418, 104,418, 
+            499,254, 488,252, 480,255, 470,250, 455,255, 440,247, 421,239" href="cities/hualien.html" alt="Hualien"
+                     data-city="hualien">
+              <area shape="poly" coords="124,349, 115,363, 107,370, 99,392, 93,418, 104,418, 
             111,423, 120,414, 125,411, 130,413, 139,404, 148,398, 151,404, 
             175,392, 187,398, 200,405, 209,409, 221,410, 229,410, 237,410, 
             245,404, 232,398, 218,397, 222,379, 224,365, 211,362, 196,355, 
-            177,350, 159,344, 146,350, 142,355, 125,349" href="cities/yunlin.html" alt="Yunlin">
-    <area shape="poly" coords="94,420, 93,436, 90,456, 89,465, 109,472, 115,465, 123,471, 
+            177,350, 159,344, 146,350, 142,355, 125,349" href="cities/yunlin.html" alt="Yunlin" data-city="yunlin">
+              <area shape="poly" coords="94,420, 93,436, 90,456, 89,465, 109,472, 115,465, 123,471, 
             129,458, 150,445, 173,447, 190,459, 191,465, 189,469, 189,485, 
             195,493, 206,490, 210,495, 216,495, 226,485, 249,471, 264,458, 
             279,449, 287,440, 273,433, 266,423, 259,411, 243,404, 237,411, 
             224,409, 214,409, 202,405, 189,400, 174,386, 151,398, 146,395, 
-            130,411, 124,409, 114,424, 106,418, 94,419" href="cities/chiayi.html" alt="Chiayi">
-    <area shape="poly" coords="86,468, 77,499, 78,522, 88,545, 102,565, 109,557, 128,561, 
+            130,411, 124,409, 114,424, 106,418, 94,419" href="cities/chiayi.html" alt="Chiayi" data-city="chiayi">
+              <area shape="poly" coords="86,468, 77,499, 78,522, 88,545, 102,565, 109,557, 128,561, 
             136,567, 155,561, 160,563, 164,552, 177,544, 177,537, 202,521, 
             216,505, 216,496, 212,496, 206,488, 196,494, 188,474, 190,463, 
             180,451, 157,447, 152,447, 128,456, 125,469, 116,465, 109,469, 
-            86,465" href="cities/tainan.html" alt="Tainan">
-    <map name="taiwanmap">
-      <area shape="poly" coords="102,568, 120,607, 116,624, 133,648, 131,652, 149,669, 
+            86,465" href="cities/tainan.html" alt="Tainan" data-city="tainan">
+              <area shape="poly" coords="102,568, 120,607, 116,624, 133,648, 131,652, 149,669, 
                  160,657, 164,636, 169,600, 170,589, 175,586, 183,587, 
                  203,571, 209,568, 213,571, 222,571, 228,578, 237,574, 
                  247,581, 257,579, 262,580, 261,553, 270,544, 274,523, 
@@ -113,8 +134,9 @@
                  316,446, 308,441, 287,436, 279,449, 255,463, 239,475, 
                  225,485, 216,494, 216,499, 207,509, 197,518, 183,525, 
                  177,531, 179,536, 173,540, 165,541, 164,546, 160,551, 
-                 149,553, 133,554, 121,550, 110,548, 100,554" href="cities/kaohsiung.html" alt="Kaohsiung">
-      <area shape="poly" coords="316,475, 304,483, 289,491, 278,511, 273,521, 271,543, 
+                 149,553, 133,554, 121,550, 110,548, 100,554" href="cities/kaohsiung.html" alt="Kaohsiung"
+                     data-city="kaohsiung">
+              <area shape="poly" coords="316,475, 304,483, 289,491, 278,511, 273,521, 271,543, 
                  263,552, 262,577, 272,586, 277,599, 274,605, 268,609, 
                  255,612, 247,619, 245,627, 238,634, 239,642, 240,648, 
                  239,698, 247,703, 251,715, 259,723, 279,731, 281,718, 
@@ -122,23 +144,44 @@
                  341,605, 359,595, 362,587, 373,583, 412,532, 412,509, 
                  423,485, 432,471, 432,463, 418,458, 404,458, 404,469, 
                  399,481, 392,496, 379,512, 366,509, 358,500, 347,500, 
-                 328,488, 317,475" href="cities/taitung.html" alt="Taitung">
-      <area shape="poly" coords="168,589, 164,628, 161,650, 147,667, 158,673, 166,677, 
+                 328,488, 317,475" href="cities/taitung.html" alt="Taitung" data-city="taitung">
+              <area shape="poly" coords="168,589, 164,628, 161,650, 147,667, 158,673, 166,677, 
                  170,672, 186,688, 195,699, 204,709, 229,742, 229,754, 
                  223,764, 223,775, 235,791, 240,803, 247,802, 251,795, 
                  259,802, 260,808, 268,812, 271,780, 281,769, 277,761, 
                  281,729, 267,723, 251,715, 247,698, 239,695, 240,674, 
                  236,658, 240,645, 247,625, 255,617, 270,612, 276,599, 
                  273,586, 259,577, 247,580, 240,572, 228,577, 223,572, 
-                 213,572, 208,564, 184,587, 169,586" href="cities/pingtung.html" alt="Pingtung">
-      <area shape="poly" coords="56,92, 46,97, 40,105, 44,117, 54,124, 66,120, 
-                 70,109, 64,96" href="cities/matsu.html" alt="Matsu">
-      <area shape="poly" coords="58,143, 46,149, 42,160, 49,171, 59,176, 70,167, 
-                 73,154, 58,141" href="cities/kinmen.html" alt="Kinmen">
-      <area shape="poly" coords="57,197, 45,202, 40,213, 45,226, 59,230, 70,223, 
-                 72,207, 57,197" href="cities/penghu.html" alt="Penghu">
+                 213,572, 208,564, 184,587, 169,586" href="cities/pingtung.html" alt="Pingtung" data-city="pingtung">
+              <area shape="poly" coords="56,92, 46,97, 40,105, 44,117, 54,124, 66,120, 
+                 70,109, 64,96" href="cities/matsu.html" alt="Matsu" data-city="matsu">
+              <area shape="poly" coords="58,143, 46,149, 42,160, 49,171, 59,176, 70,167, 
+                 73,154, 58,141" href="cities/kinmen.html" alt="Kinmen" data-city="kinmen">
+              <area shape="poly" coords="57,197, 45,202, 40,213, 45,226, 59,230, 70,223, 
+                 72,207, 57,197" href="cities/penghu.html" alt="Penghu" data-city="penghu">
 
-    </map>
+       </map>
+
+
+
+       <!-- Javascript inspired by https://nestcode.co/en/blog/create-an-interactive-image-map-and-highlight-on-areas-when-mouseover-->
+
+       <!-- jQuery Script -->
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+              integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+       <!-- Maphighlight Script -->
+       <script type="text/javascript"
+              src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+
+
+
+       <script type="text/javascript">
+              $(function () {
+                     $('.map').maphilight({
+                       
+                     });
+              });
+       </script>
 
 </body>
 
