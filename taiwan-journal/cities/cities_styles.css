@@ -50,6 +50,9 @@ nav ul li a:hover {
 
 /* ====== Basic Styling ====== */
 body {
+    background: url('../background.jpeg') no-repeat center center/cover;
+    min-height: 100vh;
+    width: 100%;
     font-family: "arial narrow";
     color: #504949; 
     margin: 0;
