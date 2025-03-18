@@ -12,10 +12,13 @@ body {
     color: #504949;
     margin: 50;
     padding: 5;
-    cursor: url('taiwan_cursor.png'), auto;
+    cursor: url('cursor_point.png'), auto;
     align-items: center;
 }
 
+a, button {
+    cursor: url('cursor_click.png'), pointer;
+}
 p {
     font-size: 16px;
     line-height: 1.2;
