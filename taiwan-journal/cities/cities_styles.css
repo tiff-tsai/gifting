@@ -38,7 +38,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'arial';
     padding: 10px 14px;
 }
 
@@ -53,7 +53,7 @@ body {
     background: url('../background.jpeg') no-repeat center center/cover;
     min-height: 100vh;
     width: 100%;
-    font-family: "arial narrow";
+    font-family: 'arial narrow';
     color: #504949; 
     margin: 0;
     padding: 0;
