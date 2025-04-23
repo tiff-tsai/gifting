@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+	margin: 0;
+}
+
+.canvas {
+	max-width: 900px;
+	height: 550px;
+	margin: 100px auto;
+	background: rgb(177, 50, 50);
+	position: relative;
+}
+
